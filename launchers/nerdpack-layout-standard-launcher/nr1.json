@@ -1,0 +1,7 @@
+{
+  "schemaType": "LAUNCHER",
+  "id": "nerdpack-layout-standard-launcher",
+  "description": "Describe me",
+  "displayName": "NerdpackLayoutStandard",
+  "rootNerdletId": "nerdpack-layout-standard-nerdlet"
+}

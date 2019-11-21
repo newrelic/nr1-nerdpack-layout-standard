@@ -1,0 +1,41 @@
+.toolbar-container {
+  box-sizing: border-box;
+  border-top: 1px solid #edeeee;
+  border-bottom: 1px solid #edeeee;
+  padding: 0 16px;
+  background-color: #fff;
+}
+
+.toolbar-section1 .toolbar-item:first-child {
+  padding-left: 0;
+}
+
+.toolbar-item {
+  display: flex;
+  justify-content: center;
+  padding: 8px 16px;
+  align-items: center;
+
+  &.has-separator {
+    border-right: 1px dotted #e3e4e4;
+  }
+}
+
+.primary-grid {
+  grid-gap: 0;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.sidebar-container {
+  height: 100%;
+  padding: 8px 16px;
+  overflow: hidden;
+  border-right: 1px solid #eeeeee;
+  background-color: #fff;
+}
+
+.primary-content-container {
+  padding: 16px;
+}
