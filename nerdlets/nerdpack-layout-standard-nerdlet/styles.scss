@@ -1,7 +1,19 @@
 @import "./nrds.scss";
 
+/* -------------------- */
+// Utility Classes
+/* -------------------- */
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
 .toolbar-container {
-  height: 70px;
+  height: 74px;
   box-sizing: border-box;
   border-top: 1px solid #d5d7d7;
   border-bottom: 1px solid #e3e4e4;
@@ -21,7 +33,7 @@
   align-items: center;
 
   &.has-separator {
-    border-right: 1px dotted #e3e4e4;
+    border-right: 1px dotted #d5d7d7;
   }
 }
 
@@ -29,7 +41,7 @@
   grid-gap: 0;
   overflow: hidden;
   position: relative;
-  height: calc(100% - 70px);
+  height: calc(100% - 74px);
 }
 
 .sidebar-container {
@@ -40,6 +52,7 @@
 }
 
 .primary-content-container {
+  overflow: scroll;
   padding: 16px;
 }
 
@@ -63,6 +76,7 @@
 }
 
 .primary-content {
+  box-sizing: border-box;
   padding: 16px;
   background-color: #fff;
   border-radius: 3px;
@@ -89,5 +103,45 @@
     font-size: 14px;
     color: #464e4e;
     line-height: 21px;
+  }
+}
+
+.empty-state {
+  height: 100%;
+  box-sizing: border-box;
+  border: 3px dashed #e3e4e4;
+  border-radius: 10px;
+  padding: 24px;
+  margin: 16px;
+  text-align: center;
+
+  .empty-state-header {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #464e4e;
+    text-transform: none;
+    margin-bottom: 10px;
+  }
+
+  .primary-content > & {
+    margin: 0;
+  }
+}
+
+p.empty-state-description {
+  font-size: 14px;
+  line-height: 20px;
+  color: #8e9494;
+  padding: 0 25%;
+}
+
+code {
+  .primary-content p & {
+    font-size: 12px;
+    background-color: #edeeee;
+    border-radius: 3px;
+    padding: 2px 5px;
+    color: #464e4ec7;
   }
 }

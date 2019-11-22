@@ -37,7 +37,7 @@ export default class NerdpackLayoutStandard extends React.Component {
                   <DropdownItem>Option 3</DropdownItem>
                 </Dropdown>
               </StackItem>
-              <StackItem className="toolbar-item has-separator">
+              <StackItem className="toolbar-item">
                 <TextField
                   label="Search"
                   placeholder="e.g. example query"
@@ -70,47 +70,41 @@ export default class NerdpackLayoutStandard extends React.Component {
           <GridItem className="sidebar-container" columnSpan={3}>
             <ul className="sidebar-list">
               {/* Create an array that we'll use to display a bunch of list items */}
-              {Array.from(Array(100).keys()).map(item => {
+              {Array.from(Array(50).keys()).map(item => {
                 return <li className="sidebar-list-item">List item {item}</li>;
               })}
             </ul>
           </GridItem>
           <GridItem className="primary-content-container" columnSpan={9}>
-            <main className="primary-content">
-              <h2>Your lovely content goes here</h2>
-
-              <p>
-                Etiam porta sem malesuada magna mollis euismod. Integer posuere
-                erat a ante venenatis dapibus posuere velit aliquet. Aenean
-                lacinia bibendum nulla sed consectetur. Integer posuere erat a
-                ante venenatis dapibus posuere velit aliquet. Integer posuere
-                erat a ante venenatis dapibus posuere velit aliquet. Aenean eu
-                leo quam.
-              </p>
-
-              <ul>
-                <li>Curabitur blandit tempus porttitor.</li>
-                <li>Magna Fusce Cursus Nibh</li>
-                <li>
-                  Cras mattis consectetur purus sit amet fermentum. Integer
-                  posuere erat a ante venenatis dapibus posuere velit aliquet.
-                </li>
-              </ul>
-
-              <p>
-                Nullam id dolor id nibh ultricies vehicula ut id elit. Duis
-                mollis, est non commodo luctus, nisi erat porttitor ligula, eget
-                lacinia odio sem nec elit. Cras mattis consectetur purus sit
-                amet fermentum. Vestibulum id ligula porta felis euismod semper.
-                Nullam quis risus eget urna mollis ornare vel eu leo. Integer
-                posuere erat a ante venenatis dapibus posuere velit aliquet.
-                Donec sed odio dui. Cras mattis consectetur purus sit amet
-                fermentum. Integer posuere erat a ante venenatis dapibus posuere
-                velit aliquet. Curabitur blandit tempus porttitor. Curabitur
-                blandit tempus porttitor. Fusce dapibus, tellus ac cursus
-                commodo, tortor mauris condimentum nibh, ut fermentum massa
-                justo sit amet risus.
-              </p>
+            <main className="primary-content full-height">
+              <Stack
+                className="empty-state"
+                fullWidth
+                fullHeight
+                verticalType={Stack.VERTICAL_TYPE.CENTER}
+                horizontalType={Stack.HORIZONTAL_TYPE.CENTER}
+                directionType={Stack.DIRECTION_TYPE.VERTICAL}
+                gapType={Stack.GAP_TYPE.NONE}
+              >
+                <StackItem>
+                  <h4 className="empty-state-header">
+                    Place your content here
+                  </h4>
+                </StackItem>
+                <StackItem>
+                  <p className="empty-state-description">
+                    Open up
+                    <code>nerdpack-layout-standard-nerdlet/index.js</code> and
+                    replace the <code>.empty-state</code> div with your content.
+                    Have suggestions, concerns, or ideas for how this template
+                    could be better?{" "}
+                    <a href="https://github.com/newrelic/nr1-nerdpack-layout-standard">
+                      Submit an issue or PR :)
+                    </a>
+                    .
+                  </p>
+                </StackItem>
+              </Stack>
             </main>
           </GridItem>
         </Grid>
