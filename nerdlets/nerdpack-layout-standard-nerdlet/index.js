@@ -69,16 +69,15 @@ export default class NerdpackLayoutStandard extends React.Component {
         >
           <GridItem className="sidebar-container" columnSpan={3}>
             <ul className="sidebar-list">
-              <li className="sidebar-list-item">List item 1</li>
-              <li className="sidebar-list-item">List item 2</li>
-              <li className="sidebar-list-item">List item 3</li>
-              <li className="sidebar-list-item">List item 4</li>
-              <li className="sidebar-list-item">List item 5</li>
+              {/* Create an array that we'll use to display a bunch of list items */}
+              {Array.from(Array(100).keys()).map(item => {
+                return <li className="sidebar-list-item">List item {item}</li>;
+              })}
             </ul>
           </GridItem>
           <GridItem className="primary-content-container" columnSpan={9}>
             <main className="primary-content">
-              <h2>Primary content</h2>
+              <h2>Your lovely content goes here</h2>
 
               <p>
                 Etiam porta sem malesuada magna mollis euismod. Integer posuere
@@ -112,12 +111,6 @@ export default class NerdpackLayoutStandard extends React.Component {
                 commodo, tortor mauris condimentum nibh, ut fermentum massa
                 justo sit amet risus.
               </p>
-
-              <TableChart
-                query="SELECT count(*) FROM AgentLifecycle TIMESERIES SINCE 1800 seconds ago EXTRAPOLATE"
-                fullWidth
-                fullHeight
-              />
             </main>
           </GridItem>
         </Grid>
