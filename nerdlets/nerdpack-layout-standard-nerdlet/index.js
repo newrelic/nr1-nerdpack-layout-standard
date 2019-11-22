@@ -7,7 +7,8 @@ import {
   Dropdown,
   DropdownItem,
   TextField,
-  Button
+  Button,
+  TableChart
 } from "nr1";
 
 // https://docs.newrelic.com/docs/new-relic-programmable-platform-introduction
@@ -67,10 +68,57 @@ export default class NerdpackLayoutStandard extends React.Component {
           spacingType={[Grid.SPACING_TYPE.NONE, Grid.SPACING_TYPE.NONE]}
         >
           <GridItem className="sidebar-container" columnSpan={3}>
-            sidebar content
+            <ul className="sidebar-list">
+              <li className="sidebar-list-item">List item 1</li>
+              <li className="sidebar-list-item">List item 2</li>
+              <li className="sidebar-list-item">List item 3</li>
+              <li className="sidebar-list-item">List item 4</li>
+              <li className="sidebar-list-item">List item 5</li>
+            </ul>
           </GridItem>
           <GridItem className="primary-content-container" columnSpan={9}>
-            main content
+            <main className="primary-content">
+              <h2>Primary content</h2>
+
+              <p>
+                Etiam porta sem malesuada magna mollis euismod. Integer posuere
+                erat a ante venenatis dapibus posuere velit aliquet. Aenean
+                lacinia bibendum nulla sed consectetur. Integer posuere erat a
+                ante venenatis dapibus posuere velit aliquet. Integer posuere
+                erat a ante venenatis dapibus posuere velit aliquet. Aenean eu
+                leo quam.
+              </p>
+
+              <ul>
+                <li>Curabitur blandit tempus porttitor.</li>
+                <li>Magna Fusce Cursus Nibh</li>
+                <li>
+                  Cras mattis consectetur purus sit amet fermentum. Integer
+                  posuere erat a ante venenatis dapibus posuere velit aliquet.
+                </li>
+              </ul>
+
+              <p>
+                Nullam id dolor id nibh ultricies vehicula ut id elit. Duis
+                mollis, est non commodo luctus, nisi erat porttitor ligula, eget
+                lacinia odio sem nec elit. Cras mattis consectetur purus sit
+                amet fermentum. Vestibulum id ligula porta felis euismod semper.
+                Nullam quis risus eget urna mollis ornare vel eu leo. Integer
+                posuere erat a ante venenatis dapibus posuere velit aliquet.
+                Donec sed odio dui. Cras mattis consectetur purus sit amet
+                fermentum. Integer posuere erat a ante venenatis dapibus posuere
+                velit aliquet. Curabitur blandit tempus porttitor. Curabitur
+                blandit tempus porttitor. Fusce dapibus, tellus ac cursus
+                commodo, tortor mauris condimentum nibh, ut fermentum massa
+                justo sit amet risus.
+              </p>
+
+              <TableChart
+                query="SELECT count(*) FROM AgentLifecycle TIMESERIES SINCE 1800 seconds ago EXTRAPOLATE"
+                fullWidth
+                fullHeight
+              />
+            </main>
           </GridItem>
         </Grid>
       </React.Fragment>
