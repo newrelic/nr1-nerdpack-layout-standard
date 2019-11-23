@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "Standard layout",
+  "name": "standard-layout",
   "description": "Nerdpack nerdpack-layout-standard",
   "version": "0.1.0",
   "scripts": {
