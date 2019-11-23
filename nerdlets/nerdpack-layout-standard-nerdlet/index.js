@@ -1,3 +1,5 @@
+/* eslint-disable no-trailing-spaces */
+
 import React from "react";
 import {
   Grid,
@@ -87,20 +89,15 @@ export default class NerdpackLayoutStandard extends React.Component {
                 gapType={Stack.GAP_TYPE.NONE}
               >
                 <StackItem>
-                  <h4 className="empty-state-header">
-                    Place your content here
-                  </h4>
+                  <h4 className="empty-state-header">How to use this layout</h4>
                 </StackItem>
                 <StackItem>
                   <p className="empty-state-description">
                     Open up
                     <code>nerdpack-layout-standard-nerdlet/index.js</code> and
-                    replace the <code>.empty-state</code> div with your content.
-                    Have suggestions, concerns, or ideas for how this template
-                    could be better?{" "}
-                    <a href="https://github.com/newrelic/nr1-nerdpack-layout-standard">
-                      Submit an issue or PR :)
-                    </a>
+                    replace dummy content with your content. Have suggestions,
+                    concerns, or ideas for how this template could be better?
+                    Feel free to <a href="https://github.com/newrelic/nr1-nerdpack-layout-standard">submit an issue or PR :)</a>
                     .
                   </p>
                 </StackItem>
