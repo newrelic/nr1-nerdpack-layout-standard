@@ -69,6 +69,11 @@ export default class NerdpackLayoutStandard extends React.Component {
           className="primary-grid"
           spacingType={[Grid.SPACING_TYPE.NONE, Grid.SPACING_TYPE.NONE]}
         >
+          {/*
+            Note: This sidebar does _not_ have to be a list of links/navigation.
+            It can just as easily contain content. This is just an example of how it
+            may be used.
+          */}
           <GridItem className="sidebar-container" columnSpan={3}>
             <ul className="sidebar-list">
               {/* Create an array that we'll use to display a bunch of list items */}
