@@ -102,7 +102,8 @@ export default class NerdpackLayoutStandard extends React.Component {
                     <code>nerdpack-layout-standard-nerdlet/index.js</code> and
                     replace dummy content with your content. Have suggestions,
                     concerns, or ideas for how this template could be better?
-                    Feel free to <a href="https://github.com/newrelic/nr1-nerdpack-layout-standard">submit an issue or PR :)</a>
+                    Feel free to <a href="https://github.com/newrelic/nr1-nerdpack-layout-standard" target="_blank"
+              rel="noopener noreferrer">submit an issue or PR :)</a>
                     .
                   </p>
                 </StackItem>
