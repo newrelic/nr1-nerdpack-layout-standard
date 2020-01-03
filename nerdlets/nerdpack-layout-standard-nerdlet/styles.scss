@@ -136,8 +136,17 @@ p.empty-state-description {
   padding: 0 25%;
 }
 
+ol.empty-state-description {
+  font-size: 14px;
+  line-height: 20px;
+  color: #8e9494;
+  padding: 0 25%;
+  text-align: left;
+}
+
 code {
-  .primary-content p & {
+  .primary-content p &,
+  .primary-content ol & {
     font-size: 12px;
     background-color: #edeeee;
     border-radius: 3px;
