@@ -97,8 +97,7 @@ export default class NerdpackLayoutStandard extends React.Component {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      how to populate your Nerdpack layout template with data
-                      tutorial.
+                      how to populate your Nerdpack layout template with data.
                     </a>{' '}
                     Have suggestions, concerns, or ideas for how this template
                     could be better? Feel free to{' '}
