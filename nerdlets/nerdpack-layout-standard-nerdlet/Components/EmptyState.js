@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Stack, StackItem } from 'nr1';
 
-// https://docs.newrelic.com/docs/new-relic-programmable-platform-introduction
-
 export default class EmptyState extends React.Component {
   static propTypes = {
     heading: PropTypes.string,
