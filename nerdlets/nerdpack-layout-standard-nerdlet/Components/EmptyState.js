@@ -18,8 +18,6 @@ export default class EmptyState extends React.Component {
       <>
         <Stack
           className="empty-state"
-          fullWidth
-          fullHeight
           verticalType={Stack.VERTICAL_TYPE.CENTER}
           horizontalType={Stack.HORIZONTAL_TYPE.CENTER}
           directionType={Stack.DIRECTION_TYPE.VERTICAL}
